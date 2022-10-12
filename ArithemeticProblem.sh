@@ -8,3 +8,6 @@
    read -p "Enter b :" b
    read -p "Enter c :" c
    echo "Inputs values are $a $b $c "
+  
+   echo "$a + $b * $c = $(( a + b * c ))"
+
