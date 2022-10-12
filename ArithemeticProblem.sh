@@ -10,4 +10,5 @@
    echo "Inputs values are $a $b $c "
   
    echo "$a + $b * $c = $(( a + b * c ))"
+    echo "$a * $b + $c = $(( a * b + c ))"
 
