@@ -23,4 +23,5 @@
 
   echo "Content in dictionary : "${soln[@]}
    echo "key values :" ${!soln[@]}
-
+ arr=( ${soln[a+b*c]} ${soln[a*b+c]} ${soln[c+a/b]} ${soln[a%b+c]} )
+ echo ${arr[@]}
