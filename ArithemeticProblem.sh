@@ -11,5 +11,16 @@
   
    echo "$a + $b * $c = $(( a + b * c ))"
     echo "$a * $b + $c = $(( a * b + c ))"
-    echo "$c + $a / $b = $(( c + a /b ))"
-    echo "$a % $b + $c = $(( a % b +c ))"
+    echo "$c + $a / $b = $(( c + a / b ))"
+    echo "$a % $b + $c = $(( a % b + c ))"
+  soln[a+b*c]=$(( $a + $b * $c ))
+
+  soln[a*b+c]=$(( $a * $b + $c ))
+
+  soln[c+a/b]=$(( $c + $a / $b )) 
+
+  soln[a%b+c]=$(( $a % $b + $c ))
+
+  echo "Content in dictionary : "${soln[@]}
+   echo "key values :" ${!soln[@]}
+
